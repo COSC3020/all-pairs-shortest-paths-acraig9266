@@ -28,3 +28,7 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.
+
+The complexity is $\Theta$(V<sup>3</sup>) which comes from the final set of nested for loops.
+Each loop within that group works for the length of the graph (V). Since there are three loops nested together it is V * V * V or V<sup>3</sup>.
+All other sections of the code are at a lower order of V<sup>2</sup> since they are only groupings of 2 loops.
